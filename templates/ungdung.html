@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VÕ TRUNG CHÁNH</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/web/css/font-awesome.min.css">
+
+    <style type="text/css">
+        
+
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            background-image: url("../static/web/images/1.jpg");
+           
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid" >
+  
+	   <div class="row text-center mt-lg-5 mb-lg-5 text-white">
+        <div class="col-md-4">
+            <div class="container">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <a href="/">
+                            <i aria-hidden="true">
+							 <img src="../static/web/images/HOME.jpg" class="img-rounded" width="50px" height="50px" alt="" />
+								
+							</i>
+                        </a>
+                    </div>
+                    <div class="col mt-2">
+                        <h5> TRANG CHỦ</h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <a href="/nhapfiledudoan">
+                        <i  aria-hidden="true">
+						 <img src="../static/web/images/ungdung.jpg" class="img-rounded" width="50px" height="50px" alt="" />
+    
+						</i>
+                    </a>
+                </div>
+                <div class="col mt-2">
+                    <h5>ĐÁNH GIÁ</h5>
+                </div>
+                <div class="col"><p>VỚI NHIỀU BỘ HỒ SƠ</p></div>
+            </div>
+        </div>
+		
+		
+		<div class="col-md-3">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <a href="/phantichdulieu">
+                        <i  aria-hidden="true">
+							<img src="../static/web/images/phantich.png" class="img-rounded" width="50px" height="50px" alt="" />
+    
+						</i>
+                    </a>
+                </div>
+                <div class="col mt-2">
+                    <h5>PHÂN TÍCH</h5>
+                </div>
+                <div class="col"><p>DỮ LIỆU</p></div>
+            </div>
+        </div>
+		
+       <div class="col-md-2">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <a href="/ketquanghiencuu">
+                        <i  aria-hidden="true">
+						 <img src="../static/web/images/danhgia.png" class="img-rounded" width="50px" height="50px" alt="" />
+    
+						</i>
+                    </a>
+                </div>
+                <div class="col mt-2"><h5>ĐÁNH GIÁ KẾT QUẢ</h5></div>
+                <div class="col"><p>MÔ HÌNH NGHIÊN CỨU</p></div>
+            </div>
+        </div>
+	 </div>  
+	  
+	  
+	  
+    <div class="text-center mt-lg-1">
+        <h2 class="text-white ">
+            ĐÁNH GIÁ TRỰC TIẾP			
+        </h2>
+          <div class="text-center ">
+        <hr class="border-top" style="width: 60%">
+    </div>
+	   
+	   
+	   <form action="/dudoan/" method="POST" align="center">
+					<h5 class="text-white ">NHẬP CÁC THÔNG TIN LIÊN QUAN</h5>
+				<table align="center" class="text-white " with="700px">
+				<tr>
+				<td with="100px">
+				<label> Tuổi</label>				
+				</td>
+				<td>
+				<input name="tuoi" id="tuoi" value = "18" style="margin-right: 10px; width: 150px; height: 30px;">
+					
+				</td>
+				</tr>
+				
+				
+				<tr>
+				<td with="100px">
+				<label>Giới tính </label>				
+				</td>
+				<td>
+				<select  id="gioitinh" name="gioitinh" style="margin-right: 10px; width: 150px; height: 30px;">
+						<option value="1"> Nam </option>
+						<option value="2"> Nữ </option>							
+					</select>
+				</td>
+				</tr>
+				
+				
+				<tr>
+				<td with="100px">
+					<label>Kinh nghiệm </label>		
+				</td>
+				<td>
+				<select  id="kinhnghiem" name="kinhnghiem" style="margin-right: 10px; width: 150px; height: 30px;">
+						<option value="0"> Không có </option>
+						<option value="1"> 1 năm </option>
+						<option value="2"> 2 năm </option>		
+						<option value="3"> 3 năm </option>		
+						<option value="4"> 4 năm </option>		
+						<option value="5"> 5 năm </option>
+						<option value="6"> 6 năm </option>
+						<option value="7"> 7 năm </option>	
+						<option value="8"> 8 năm </option>	
+						<option value="9"> 9 năm </option>	
+					</select>
+				</td>
+				</tr>
+				
+				
+				<tr>
+				<td with="100px">
+					<label>Bằng cấp </label>			
+				</td>
+				<td>
+				<select  id="bangcap" name="bangcap" style="margin-right: 10px; width: 150px; height: 30px;">
+						<option value="Sơ cấp, không bằng"> Không bằng </option>
+						<option value="Trung cấp"> Trung cấp </option>
+						<option value="Cao đẳng"> Cao dẳng </option>		
+						<option value="Đại học"> Đại học </option>		
+						<option value="Sau đại học"> Sau đại học </option>							
+					</select>
+				</td>
+				</tr>
+				
+				
+				<tr>
+				<td>
+				<label>Chuyên ngành </label>
+				</td>
+				
+				<td>
+				<input name="chuyennganh" id="chuyennganh" style="margin-right: 10px; width: 150px; height: 30px;">
+					
+				</td>
+				</tr>
+				
+				<tr>
+				<td>
+				
+				<label>Ngoại ngữ </label>
+				</td>
+				
+				<td>
+				<input name="ngoaingu" id="ngoaingu" style="margin-right: 10px; width: 150px; height: 30px;">
+					
+				</td>
+				</tr>
+				
+				<tr>
+				<td>
+				
+				<l<label>Tin học </label>
+				</td>
+				
+				<td>
+				<input name="tinhoc" id="tinhoc" style="margin-right: 10px; width: 150px; height: 30px;">
+					
+				</td>
+				</tr>
+				
+				
+				<tr >
+				<td >				
+				
+				</td>
+				
+				<td>
+				</br>
+				<button class="btn btn-success"  value="Dự đoán" type="submit" style="margin-right: 10px;">Dự đoán</button>
+	
+				</td>
+				</tr>
+				</table>
+					
+					
+						
+					</form>
+	   
+	   
+		
+       
+    </div>
+    <div style="margin-top: 80px"></div>
+   
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-light text-center">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    <a href="/">Võ Trung Chánh</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
